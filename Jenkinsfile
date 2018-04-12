@@ -1,8 +1,8 @@
 pipeline {
-   agent { docker { 
+   agent { 
       
       label 'jdk9'
-   } }
+   } 
 
    options {
       buildDiscarder(logRotator(numToKeepStr:'10'))
