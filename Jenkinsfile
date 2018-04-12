@@ -1,7 +1,7 @@
 pipeline {
    agent { docker { 
-      image 'maven:3.5-alpine' 
-      label 'docker-cloud'
+      
+      label 'jdk9'
    } }
 
    options {
