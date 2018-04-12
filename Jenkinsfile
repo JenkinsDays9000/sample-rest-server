@@ -1,5 +1,8 @@
 pipeline {
-   agent { docker { image 'maven:3.5-alpine' } }
+   agent { docker { 
+      image 'maven:3.5-alpine' 
+      label 'docker-cloud'
+   } }
 
    options {
       buildDiscarder(logRotator(numToKeepStr:'10'))
